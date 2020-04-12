@@ -6,7 +6,7 @@ trigger:
   - '*'
   
   pool:
-    vmImage: 'Windows-latest'
+    vmImage: 'windows-latest'
     demands:
     - npm
   
