@@ -4,16 +4,15 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 trigger:
   - '*'
-  
-  pool:
-    vmImage: 'windows-latest'
-    demands:
+pool:
+  vmImage: 'windows-latest'
+  demands:
     - npm
+
+variables:
+  buildConfiguration: 'Release'
   
-  variables:
-    buildConfiguration: 'Release'
-  
-  steps:
+steps:
   - task: UseDotNet@2
     displayName: 'Use .NET Core SDK 3.1.100'
     inputs:
