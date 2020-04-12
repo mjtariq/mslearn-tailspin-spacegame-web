@@ -8,8 +8,6 @@ trigger:
 
 pool:
   vmImage: 'Windows-latest'
-  demands:
-    - npm
 
 variables:
   solution: '**/*.sln'
